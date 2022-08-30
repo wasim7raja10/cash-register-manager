@@ -31,7 +31,6 @@ const App = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     let diff = Number(cash) - Number(bill);
-    console.log("diff", diff);
     if (diff < 0) {
       setChange("money insufficient");
     } else {
@@ -62,7 +61,6 @@ const App = () => {
       setShowCashGiven(false);
       setCash("");
     }
-    // console.log(change["2000"]);
   }, [bill, change]);
 
   return (
